@@ -14,9 +14,10 @@ const WatchPage = () => {
 
     return (
         <>
-            <div className='flex flex-col'>
-                <div className='px-5'>
+            <div className='flex w-full  flex-col justify-center my-8'>
+                <div className='px-5 flex justify-center max-sm:px-2'>
                     <iframe 
+                        className='w-[90%] h-[650px] max-sm:w-[100%] max-sm:h-[300px] max-md:h-[400px]'
                         width="1000" 
                         height="500" 
                         src={"https://www.youtube.com/embed/" + searchParams.get("v")} 

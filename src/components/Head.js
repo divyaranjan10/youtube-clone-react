@@ -59,7 +59,7 @@ const Head = () => {
     }
 
     return (
-        <div className='grid grid-flow-col p-4 shadow-lg'>
+        <div className='grid grid-flow-col p-4 shadow-lg sticky top-0 bg-white'>
             <div className='flex col-span-1'>
                 <img 
                     onClick={() => toggleMenuHandler()}
@@ -67,7 +67,7 @@ const Head = () => {
                     alt='toggle-menu'
                     src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/2048px-Hamburger_icon.svg.png'
                 />
-                <a href='/'>
+                <a href='/' className='max-sm:hidden'>
                     <img className='h-8 mx-2'
                         alt='youtube-logo'
                         src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/1200px-YouTube_Logo_2017.svg.png'
@@ -75,7 +75,7 @@ const Head = () => {
                 </a>
             </div>
             <div className='relative col-span-10 px-10'>
-                <div>
+                <div className='flex justify-center '>
                     <input 
                         className='px-2 w-1/2 border border-gray-400 p-2 rounded-l-full' 
                         type='text'
@@ -87,7 +87,7 @@ const Head = () => {
                     <button className='border border-gray-400 px-4 py-2 rounded-r-full bg-gray-100'>🔍</button>
                 </div>
                 {showSuggestions && (
-                    <div className='absolute bg-white py-2 px-3 w-[32rem] shadow-lg rounded-lg border border-gray-100'>
+                    <div className='absolute bg-white py-2 px-3 w-[100%] shadow-lg rounded-lg border border-gray-100'>
                         <ul>
                             {suggestions.map((suggestionsList) => (
                                 <li key={suggestionsList} className='py-2 px-3 hover:bg-gray-100'>

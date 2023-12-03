@@ -13,8 +13,8 @@ const Sidebar = () => {
   }
 
   return (
-    <div className='p-5 shadow-lg w-48'>
-      <ul>
+    <div className='p-5 shadow-2xl h-[100vh] w-48 fixed top-16 bg-white'>
+      <ul className='leading-7'>
         <li><Link to="/">Home</Link></li>
         <li>Shorts</li>
         <li>Subscriptions</li>
@@ -22,7 +22,7 @@ const Sidebar = () => {
         <li>Youtube Music</li>
       </ul>
       <h1 className='font-bold pt-5'>Subscriptions</h1>
-      <ul>
+      <ul className='leading-7'>
         <li>RoadsideCoder</li>
         <li>JsCafe</li>
         <li>Kevin Powell</li>
